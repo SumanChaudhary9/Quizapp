@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title text-center">General Knowledge Quiz</h2>
+      <p class="text-center text-muted">Test your knowledge with a variety of topics!</p>
+      <div id="quiz-container" class="mt-4">
+        <!-- Question Text -->
+        <p id="question" class="h5 text-center font-weight-bold"></p>
+        
+        <!-- Options -->
+        <div id="options" class="list-group mt-3"></div>
+      </div>
+      
+      <!-- Next Button -->
+      <button id="next-button" class="btn btn-primary mt-4 float-right" onclick="nextQuestion()">Next Question</button>
+      
+      <!-- Result Display -->
+      <p id="result" class="h5 text-center mt-4 font-weight-bold"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
